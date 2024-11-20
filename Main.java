@@ -5,13 +5,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.printf("Выберите действие от 0 до 5: ");
+            System.out.printf("Выберите действие от 0 до 4: ");
             while (!scanner.hasNextInt()) {
                 System.out.print("Ошибка! Введите целое число: ");
                 scanner.next();
             }
             int d = scanner.nextInt();
-            if (d < 0 || d > 5) {
+            if (d < 0 || d > 4) {
                 System.out.println("Введено неверное значение!");
                 continue;
             }
